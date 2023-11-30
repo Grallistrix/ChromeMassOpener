@@ -1,22 +1,15 @@
-﻿// SecretSecretProject.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
+// SecretSecretProject.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
 //
 
 #include <iostream>
-#include <vector>
 #include <fstream>
 #include <string>
-#include <cstdlib>
-#include <cstdio>
-#include <ctime>
 
 using namespace std;
 
-#define LIMIT 3
 int main()
 {
-
-    srand(time(NULL));
-    const string filePath = "C:/Users/czarn/Desktop/REDD.txt";
+    const string filePath = "PUT_YOUR_FILE_PATH_HERE";
 
     fstream file;
     file.open(filePath, std::ios::in);
